@@ -195,13 +195,13 @@ const SVGRenderer = () => {
             </div>
 
             <div className="p-4">
-              <textarea
-                className="w-full h-24 p-3 text-sm border rounded-md resize-none
-                  focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="在此粘贴你的SVG代码..."
-                onChange={handleInputChange}
-                value={svgContent}
-              />
+			<textarea
+			  className="w-full h-24 p-3 text-sm border rounded-md resize-y min-h-[96px]
+				focus:outline-none focus:ring-2 focus:ring-blue-500"
+			  placeholder="在此粘贴你的SVG代码..."
+			  onChange={handleInputChange}
+			  value={svgContent}
+			/>
               {error && (
                 <p className="text-sm text-red-500 mt-2">{error}</p>
               )}
